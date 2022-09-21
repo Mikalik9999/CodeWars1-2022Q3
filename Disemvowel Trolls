@@ -1,0 +1,11 @@
+function disemvowel(str) {
+  var strArr = str.split('');
+  for (var a = 0; a < str.length; a++) {
+    var char = str[a].toLowerCase();
+    if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+      strArr[a] = '';
+    }
+  }
+  str = strArr.join('');
+  return str;
+}
