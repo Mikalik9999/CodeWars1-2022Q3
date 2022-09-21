@@ -1,0 +1,10 @@
+function isIsogram(str){
+  let newStr = str.toUpperCase()
+  for(i=0; i < newStr.length; i++)
+  {
+   if (newStr.split(newStr[i]).length-1 > 1) 
+    {
+      return false }  
+  }
+  return true;
+}
