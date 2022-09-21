@@ -1,0 +1,9 @@
+function explode(s) {
+  return s.split('').map(a=>{
+    let newA = '';
+    for(let i = 0; i < +a; i++){
+     newA += a;
+    }
+    return newA
+  }).join('')
+}
