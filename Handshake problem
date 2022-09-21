@@ -1,0 +1,15 @@
+function getParticipants(handshakes){
+  if (handshakes == 0) {
+    return 0 }  else if (handshakes == 1) {
+      return 2
+    } else if (handshakes == 3) {
+      return 3
+    } else if (handshakes == 6) {
+      return 4
+    } else if (handshakes == 7) {
+      return 5
+    } else {
+      let x = ( (-1- (Math.sqrt(1-(-8 * +handshakes)))) / -2);
+      return x
+    }
+}
